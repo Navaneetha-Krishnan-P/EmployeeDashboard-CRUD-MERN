@@ -1,0 +1,230 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Set a modern font style */
+}
+
+/* Container to center .employee */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Optional: background color to see the container */
+}
+
+/* Existing CSS */
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.employee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #edebf2;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.employee-align {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.textnew {
+    margin-bottom: 50px;
+    color: #343a40;
+}
+
+input {
+    width: 100%;
+    height: 50px; /* Increased height */
+    font-size: 18px; /* Larger font size */
+    padding: 12px; /* Increased padding */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+/* Dashboard styling */
+.employee-dashboard {
+    display: flex;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+/* Dashboard text */
+.dashboard-text {
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Button styling */
+.button {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-submit {
+    margin-right: 37px;
+}
+
+#btn {
+    color: white;
+    background-color: #007bff;
+    padding: 10px;
+    border: none;
+    width: 70px;
+    border-radius: 5px;
+}
+
+#btn:hover {
+    opacity: 0.7;
+}
+
+#btn2 {
+    color: white;
+    background-color: #dc3545;
+    border: none;
+    width: 70px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#btn2:hover {
+    opacity: 0.7;
+}
+
+#btn3 {
+    color: white;
+    background-color: #28a745;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#btn3:hover {
+    opacity: 0.7;
+}
+
+/* Responsive design for Create page */
+@media (max-width: 768px) {
+    .employee {
+        padding: 30px 15px;
+        width: 95%;
+    }
+
+    input {
+        font-size: 16px;
+        height: 45px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .employee {
+        padding: 20px 10px;
+    }
+
+    input {
+        font-size: 14px;
+        height: 40px;
+        padding: 8px;
+    }
+}
+
+/* Existing CSS for tables */
+.employee-table {
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.employee-read {
+    padding: 0px 30px;
+    padding-top: 30px;
+}
+
+.employee-db {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.employee-create {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#customers {
+    margin: 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif; /* Consistent font style */
+    border-collapse: collapse;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+}
+
+#customers td {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
