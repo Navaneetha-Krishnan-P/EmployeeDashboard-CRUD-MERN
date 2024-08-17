@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './css/index.css';
 import logo from './assets/logo.png'
 
-const api_base="http://localhost:3001";
+const api_base="https://employee-dashboard-crud-mern.vercel.app";
 function Update(){
     const {id}=useParams();
     const [updatedEmployeeName, setUpdatedEmployeeName] = useState('');
