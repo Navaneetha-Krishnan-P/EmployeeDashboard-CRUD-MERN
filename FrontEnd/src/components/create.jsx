@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './css/index.css';
-import logo from './assets/logo.png';
 
 const api_base = "https://employee-dashboard-crud-mern.vercel.app";
 
@@ -12,6 +11,8 @@ function Create() {
   const [employeeEmail, setEmployeeEmail] = useState('');
   const [employeePhone, setEmployeePhone] = useState('');
   const [errors, setErrors] = useState({});
+
+  const navigate = useNavigate();
 
   const validateInputs = () => {
     const error = {};
@@ -53,6 +54,7 @@ function Create() {
         }).then((res) => {
           if (res.status === 201) {
             alert("Employee Data Saved Successfully");
+            navigate('/'); 
             setEmployeename('');
             setEmployeeID('');
             setEmployeeEmail('');
@@ -69,51 +71,49 @@ function Create() {
 
   return (
     <div class="container">
-    <div className='employee'>
-
-      <div className='employee-form'>
-        <div className='textnew'>
-          <h2>Add New Employee</h2>
-        </div>
-        <div className="employee-align">
-          <input
-            type='text'
-            onChange={(e) => setEmployeename(e.target.value)}
-            placeholder='Employee Name'
-            required
-            value={employeeName}
-          />
-          <input
-            type='text'
-            onChange={(e) => setEmployeeID(e.target.value)}
-            placeholder='Employee ID'
-            required
-            value={employeeID}
-          />
-          <input
-            type='text'
-            onChange={(e) => setEmployeeEmail(e.target.value)}
-            placeholder='Employee Email'
-            required
-            value={employeeEmail}
-          />
-          <input
-            type='tel'
-            onChange={(e) => setEmployeePhone(e.target.value)}
-            placeholder='Employee Phone'
-            required
-            value={employeePhone}
-          />
-        </div>
-
-        <div className='button'>
-          <button id='btn'>
-            <Link className="link" to="/">Back</Link>
-          </button>
-          <button className='btn-submit' id='btn' onClick={Submit}>Submit</button>
+      <div className='employee'>
+        <div className='employee-form'>
+          <div className='textnew'>
+            <h2>Add New Employee</h2>
+          </div>
+          <div className="employee-align">
+            <input
+              type='text'
+              onChange={(e) => setEmployeename(e.target.value)}
+              placeholder='Employee Name'
+              required
+              value={employeeName}
+            />
+            <input
+              type='text'
+              onChange={(e) => setEmployeeID(e.target.value)}
+              placeholder='Employee ID'
+              required
+              value={employeeID}
+            />
+            <input
+              type='text'
+              onChange={(e) => setEmployeeEmail(e.target.value)}
+              placeholder='Employee Email'
+              required
+              value={employeeEmail}
+            />
+            <input
+              type='tel'
+              onChange={(e) => setEmployeePhone(e.target.value)}
+              placeholder='Employee Phone'
+              required
+              value={employeePhone}
+            />
+          </div>
+          <div className='button'>
+            <button id='btn'>
+              <Link className="link" to="/">Back</Link>
+            </button>
+            <button className='btn-submit' id='btn' onClick={Submit}>Submit</button>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 }
