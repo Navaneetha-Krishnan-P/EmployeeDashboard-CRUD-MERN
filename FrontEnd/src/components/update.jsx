@@ -39,7 +39,7 @@ function Update(){
     // const filteredKeys = Object.keys(employee[0] || {}).filter((key) => key !== '_id' && key !== '__v');
 
     return(
-        <div className='update-employee'>
+        <div className='container'>
             <div className='employee'>
                
                 <div class="employee-form">
