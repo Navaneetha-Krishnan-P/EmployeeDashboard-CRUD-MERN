@@ -5,7 +5,7 @@ import Update from './components/update';
 
 import {BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 
-const api_base="http://localhost:3001";
+const api_base="https://employee-dashboard-crud-mern.vercel.app";
 function App() {
   
 
