@@ -12,7 +12,7 @@ function Read() {
 
         GetEmployee();
         if (!alertShownRef.current) {
-            alert("For a better experience, please use the desktop site.");
+            alert("If you use mobile, Use Desktop Site for better view, else kindly ignore !!");
             alertShownRef.current = true; 
         }
     }, []);
