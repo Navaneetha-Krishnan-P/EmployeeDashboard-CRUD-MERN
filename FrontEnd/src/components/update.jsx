@@ -40,46 +40,6 @@ function Update(){
 
     return(
         <div className='update-employee'>
-            <header className='employee-dashboard'>
-                <div className='h1-text'>
-                    <div>
-                    <h1 id='dashboard-text'>Employee Dashboard</h1>
-                    </div>
-                </div>
-                <div>
-                    <img src={logo} alt='logo'/>
-                </div>
-            </header>
-            {/* <div className='current-employee'>
-                <div className='employee-db'>
-                    <h1>The Employee Wants To Update:</h1>
-                </div>
-                <br/>
-                <table>
-                    <thead>
-                        <tr>
-                           {filteredKeys && filteredKeys.length>0 &&
-                            filteredKeys.map((key)=>(
-                                <th key={key}>{key}</th>
-                            ))
-                           }
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        { employee && employee.length >0 &&
-                            employee.map((item)=>(
-                                <><td key={item._id}>{item.Employeename}</td>
-                                    <td key={item._id}>{item.EmployeeID}</td>
-                                    <td key={item._id}>{item.Email}</td>
-                                    <td key={item._id}>{item.Phone}</td></>
-                                
-                        ))
-                    }
-                    </tr>
-                    </tbody>
-                </table>
-            </div> */}
             <div className='employee'>
                
                 <div class="employee-form">
