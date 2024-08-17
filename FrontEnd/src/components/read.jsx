@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './css/index.css';
 
 
-const api_base="http://localhost:3001";
+const api_base="https://employee-dashboard-crud-mern.vercel.app";
 function Read() {
     const[employees,setEmployees]=useState([]);
     
